@@ -70,10 +70,6 @@ git branch
 git branch "new branch name"
 // it will create a new branch
 
-
-the end of the note
-
-
 git checkout branchname
 git switch branchname
 // both command are same and switch the branch from master to newbranchcreated
