@@ -1,0 +1,78 @@
+npm init 
+// use to start the node package 
+// it will create the package.json
+
+npm init -y
+// yes to all question without press enter multiple times
+// donot ask anything
+
+
+// how to run node project
+node index.js
+
+//we add the short cut in script inside package.json file
+// meta data of project
+// data of dependencies
+// here we create node indexjs shortcut as start
+// now we write npm run <scriptname>
+npm run start
+
+//npmjs website is the playstore for over project where we get all the modules
+npm i modulename 
+// to install modul
+// create package-lock.js file also
+// it store all the information of modules
+// it will store the dependencies of dependencies or packages of packages
+
+//dev dependencies 
+// are those dependencies which are use only for developer phase
+// example nodemon
+npm i npdemon --save-dev
+// to install nodemon in dev dependencies
+// which is not use on when project is live
+// dev dependencies cannot send to production phase
+
+
+//start and test are default script if we not use run keyword thrn it will work without error
+//but after any script we must have to use run else we got error
+
+
+
+// uninstall the package
+npm uninstall nodemon
+
+
+
+
+// if we install dependencies
+// it also want another dependencies to work they all are store in node_module folder
+
+
+
+// versioning
+xx.yy.zz
+zz -> patchUpdate  // if we change normal change in code
+yy -> minorUpdate  // if we add new feature then we update minor update.
+xx -> majorUpdate  // strickly not recommanded to update(do not update this)
+
+
+
+express version -> "^4.21.2"
+^ -> carrot sign --> not update major update rest all the update can be done
+~ -> telada sign --> not update major and minor update rest all the update can be done
+// if not sign is there then nothing to be update..
+
+
+// import/export
+// there are two types of imports
+// common import/export
+// es6 import/export name as module in nodeJs
+
+// for import we use require("filePath") keyword and store in variable
+// for export we use module.exports = name of function;
+
+// if we use require("express") // not filepath 
+// it means we import package
+
+
+

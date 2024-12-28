@@ -1,0 +1,26 @@
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(100, 185, 100);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 200px;
+    width: 100vw;
+    align-content: center;
+    font-size: 30px;
+}
+
+footer {
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

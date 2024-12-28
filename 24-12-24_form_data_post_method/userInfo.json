@@ -1,0 +1,44 @@
+[
+    {
+        "fname": "Vishal",
+        "lname": "Kumar",
+        "profession": "Web Developer",
+        "uname": "Parul University"
+    },
+    {
+        "fname": "Omee",
+        "lname": "khathoriya",
+        "profession": "app developer",
+        "uname": "IIT KGP"
+    },
+    {
+        "fname": "Piyush",
+        "lname": "Bagdi",
+        "profession": "Backend engineer",
+        "uname": "Parul University"
+    },
+    {
+        "fname": "Jatin",
+        "lname": "Yadav",
+        "profession": "Data Analytic",
+        "uname": "LPU"
+    },
+    {
+        "fname": "Gaurav",
+        "lname": "Jha",
+        "profession": "Data Scientist",
+        "uname": "Parul University"
+    },
+    {
+        "fname": "Pooja",
+        "lname": "Saini",
+        "profession": "Cyber Security",
+        "uname": "IIT GOA"
+    },
+    {
+        "fname": "Shrey ",
+        "lname": "kumar",
+        "profession": "MERN DEVELOPER",
+        "uname": "IIT BOMBAY"
+    }
+]

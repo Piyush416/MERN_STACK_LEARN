@@ -1,0 +1,10 @@
+why we use express instant of nodejs
+
+because we have to write each and every end point or route 
+example: style.css, img 
+
+for all end point we have to right in if and else if ladder
+
+we see this on 2_task_route_render
+
+and also in 23-12-24/2_task_route_handle

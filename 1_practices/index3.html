@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeout</title>
+</head>
+<body>
+    <h1 style="display: none;">this is heading</h1>
+    <button  class="button">click me</button>
+
+    <script>
+        let h1 = document.querySelector("h1")
+        let button = document.querySelector("button")
+
+        let heading = setTimeout(()=>{
+            h1.style.display = ""
+        },2000)
+
+        let btn = setTimeout(()=>{
+            button.style.display = ""
+        },4000)
+
+        clearTimeout(btn)
+    </script>
+</body>
+</html>

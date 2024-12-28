@@ -1,0 +1,104 @@
+VCS - version control system
+// first we check username and email
+git config --global user.name
+git config --global user.email
+
+//set email
+git config --global user.email = "emailadress"
+
+
+//second we install 2extension of vscode
+1. gitGraph 
+2. gitLens
+
+
+git init 
+// to Initialized the repository(folder) or trackk the folder
+// it will have three stage 
+// 1. working director  git init
+// 2. staging area  git add .  //(move from 1 to 2)
+// 3. commit  git commit -m "message" //(move from 2 to 3)
+
+
+git add . 
+// all files/folder move to staging area
+
+//if particular file/folder to move to staging area
+
+git add filename/folder/anotherfilename 
+
+
+
+git status 
+// show to  status 
+
+
+git commit -m "message"
+
+//both add commit in single line
+git commit -am "message"  //donot use for 1st commit it will not work
+git commit -a-m "message" both are same
+
+git log
+// all commit information show
+
+git log --oneline
+// show all commit in oneLine
+
+git blame <filename>
+// print all the commit message with complete information
+//gitlens extension do same thing
+
+
+git config --global alias.one "log --oneline"
+//now i can use
+git one (to execute some line git log --online) using git one command
+
+
+git show SHA ID
+// all information about commit which code is add and remove and by whom
+// SHA ID is starting 7character which was show in log --online command example->c33747a
+
+git revert SHA ID
+// it will remove all the change on file which was done by SHA ID
+// use :wq to exit the and save
+
+git branch
+// it will show all the branch
+// * it show that you are now that this branch
+
+git branch "new branch name"
+// it will create a new branch
+
+git checkout branchname
+git switch branchname
+// both command are same and switch the branch from master to newbranchcreated
+
+//merge secondaryBranchName to Master
+git merge "secondaryBranchName"
+//when we merge branch file same line will change then a confict will come and we manual have to resolve this
+
+//with the help of gitGraph we can visually see the branch are merge .....
+
+//delete the branch name
+git branch -d "branchname"
+
+//change the branch
+git branch -M "branchName"
+
+
+
+// localRepository link with remote Repository
+git remote add origin linkofrepository
+// we link localrepository to that remote Repository by name origin
+// we can change origin name also example(git remote add mySoftware LinkToWhichWeLinkTheLocalRepository)
+
+git remote -v
+// show remote name (example origin)
+
+//we push the origin to main branch
+git push -u origin main 
+// -u upstream Branch (next time we not to write again origin main)
+
+//next time we write only git push 
+// git know we use -u it means we push origin to main branch

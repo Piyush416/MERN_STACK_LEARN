@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+            <a href="/about">About</a>
+            <a href="/service">Services</a>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <form action="/submit_form" method="post">
+            <h1 class="main_heading">User Information</h1>
+            <hr>
+
+            <label for="fname">First Name:</label>
+            <input type="text" required id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" required id="lname" name="lname"><br><br>
+            <label for="lname">Profession: </label>
+            <input type="text" required id="profession" name="profession" placeholder="ex. web developer , backend engineer , etc"><br><br>
+            <label for="lname">University Name:</label>
+            <input type="text" required id="uname" name="uname"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+
+</body>
+
+</html>

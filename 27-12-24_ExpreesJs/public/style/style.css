@@ -1,0 +1,97 @@
+*
+{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+.header
+{
+    display: flex;
+    padding: 20px;
+    background-color: lightgreen;
+    margin-bottom: 40px;
+}
+
+ul a
+{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(22, 107, 22);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+a:hover
+{
+    color: black;
+}
+
+
+
+
+/* form css */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 50%;
+    margin: auto auto;
+    font-size: 17px;
+    padding: 8px;
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    box-shadow: 10px 15px 15px 2px lightgrey;
+  }
+  
+  input[type="text"]
+  {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 6px;
+  }
+  
+
+  label
+  {
+    display: inline-block;
+    width: 17%;
+  }
+
+
+  input[type="submit"]
+  {
+    background-color: #4daea1;
+    color: white;
+    padding: 10px;
+    margin-left: 2px;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 2px 1px 4px 1px #4daea1;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover{
+      background-color: #4caf84;
+  }
+
+  .main_heading {
+    text-align: center;
+    text-shadow: 4px 3px 5px #6eddad;
+    margin-bottom: 15px;
+  }
+
+  hr
+  {
+    margin-bottom: 10px;
+  }
+  

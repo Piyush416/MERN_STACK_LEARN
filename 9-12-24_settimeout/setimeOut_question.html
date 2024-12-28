@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut</title>
+</head>
+
+<body>
+    <h1>Button not click yet(you have 3second to stop this text)</h1>
+    <!-- <button class="start">Start</button> -->
+    <button class="stop">Stop</button>
+
+
+
+    <script>
+
+
+        let h1 = document.querySelector("h1")
+        // let start = document.querySelector(".start")
+        let stop = document.querySelector(".stop")
+
+        const textchange = setTimeout(() => {
+            h1.innerText = "Clicked Button"
+        }, 2000);
+
+        function myStopFunction() {
+            clearTimeout(textchange);
+        }
+
+        // start.addEventListener("click", () => {
+        //     // textchange
+        // })
+
+        stop.addEventListener("click", () => {
+            myStopFunction(textchange)
+        })
+
+
+
+    </script>
+</body>
+
+</html>
