@@ -1,0 +1,36 @@
+Middlewar always run before every request... (use for authetication for example)
+
+
+built in --> provided by express  static||JSON||urlencodes
+// To use built in middlewar in express we use app.use(middleware name) 
+//example app.use(express.json());
+
+third party -> bodyParcel || CORS || Cookie_parser
+custom -> which is made me own
+
+
+
+1st req.
+2st req.
+app.use(middlewar)
+3st req.
+4st req.
+// the middle war only use after 2nd request 
+// means middleware not use for 1,2 request
+
+
+3.creating custom middlewar
+
+function log(req,res,next)
+{	
+	console.log(req.url);
+	next(); // next will send to next middlewar or next route
+	// if we not write this then page get loading again and again
+}
+//to use this custom middle war
+//we use app.use(log);
+
+
+// If I Want to use middlewar only for a particular request 
+req.get("route(api/user/)", middlewarName||function , eventHandler(req,res)=>{});
+// we use this before eventHandler

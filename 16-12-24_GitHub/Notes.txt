@@ -83,7 +83,7 @@ git merge "secondaryBranchName"
 //delete the branch name
 git branch -d "branchname"
 
-//change the branch
+//change the branch to given name 
 git branch -M "branchName"
 
 

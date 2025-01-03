@@ -1,0 +1,4 @@
+1. mongoDB 
+2. mongodb shell
+3. mongodb database tool
+are file are msi type 

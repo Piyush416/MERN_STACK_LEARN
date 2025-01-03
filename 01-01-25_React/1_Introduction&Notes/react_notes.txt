@@ -1,0 +1,15 @@
+React is framework
+
+React is made by facebook to solve the notification problem
+
+React have two parts 
+React-DOM -> use for developing web apps
+React Native -> use for developing mobile apps
+
+
+.jsx -> javascript extension 
+
+commands
+
+npm create-react-app . (dot means current folder me hi install kardo)
+npm create-react-app myapp (it will create a folder myapp and install the react inside that)

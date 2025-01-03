@@ -1,0 +1,18 @@
+// indexing
+
+// we use this commands in sample database
+
+
+
+// show the indexes
+db.users.getIndexes()
+
+
+db.users.find({id:6}).explain("executionStats")
+//
+
+db.users.createIndex({id : 1}) // id 1 means ascending order and name of index
+// -1 means decending order 
+db.users.createIndex({id : 1}, {unique:true})
+
+db.users.dropIndex({id : 1})

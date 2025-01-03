@@ -1,0 +1,13 @@
+we have one json file import it
+and add eligible filed in all document with default value : false
+and set the true value only those document which have greater than 18..
+
+
+commands are 
+In terminal 
+1. mongoimport C:\Users\piyus\Desktop\sem6_data\mern_stack\28-12-24_mongoDB\3_Task\studentData.json -d student -c user --jsonArray
+2. mongosh
+3. use student
+4. db.user.updateMany({}, {$set :{Eligible: 'false'}})
+5. db.user.updateMany({Age : {$gte: 18}} , {$set : {Eligible:'true'}})
+6. db.user.find().limit(10) // see the result

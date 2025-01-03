@@ -1,0 +1,142 @@
+in databse -> ex -> parul
+we have multiple collection -> (ex -> student,staff,professors)
+inside we have multiple document(object)
+
+commands
+1. mongosh -> connect with database
+2. show dbs || show databases -> show all the databases
+
+
+3. create database and use it
+use database_name
+example -> use parulUni
+// it will not show because we donot have any collection
+
+
+4. to show collections -> show collections
+
+
+5. single connection create 
+db.createCollection("CSE")
+// one collection is created
+
+
+6. Delete the collection
+db.collectionName.drop();
+
+
+
+7. delete the database
+db.dropDatabase()
+
+
+
+// Create 
+8. insert one document
+db.collectionName.insertOne({id: 1,name: "Piyush", year : 2024})
+
+
+9. insert many document
+[{id: 1,name: "Rohit", year : 203},{id: 2,name: "Sanjay", year : 2024},{id: 3,name: "vipul", year : 2027},{id: 4,name: "Piyush", year : 2025}]
+db.users.insertMany([{id: 1,name: "Rohit", year : 2024},{id: 1,name: "Sanjay", year : 2024},{id: 1,name: "vipul", year : 2024}])
+
+10. show the user
+db.collectionName.find()
+
+
+11. show document with conditions
+db.users.find({name:'Rohit'})
+
+
+// popular opertion
+CRUD
+C -> Create 
+R -> Read
+U -> Update
+D -> Delete
+
+
+// compairson Operation             { key : value } --> value also taken as key value
+$gt -> greater than db.users.find( { id : {$gt : 5} } )
+$lt -> less than 
+$gte -> greater than equal to 
+$lte -> less than equal to
+$eq -> equal to 
+$ne -> not equal to
+$in -> in  example -> db.users.find({id: {$in: [1,2,3] }}) it take array as value
+$nin -> not in ex-> db.users.find({id: {$nin:[1,3]}})
+
+
+//read -> .find()
+// find all the value have key greater than 5
+db.collection.find({key: {$gt:5}}) 
+
+
+//*************************************
+.count() --> total count -> db.users.find().count()
+.skip() -> starting 3 document skip -> db.users.find().skip(3)
+.limit() -> starting 6 document visit -> db.users.find().limit(6)
+.sort() -> sort the given key -> db.users.find().sort({year: -1})  
+-1 -> print the decreasing order 
+1 -> print the increasing order 
+
+
+// Logical Operation
+1. AND -> db.<collection name>.find( { $and : [ {key1:value1} , {key2:value2} ] } )
+2. OR -> db.<collection name>.find( { $or : [ {key1:value1} , {key2:value2} ] } )
+3. NOR -> db.<collection name>.find( { $nor : [ {key1:value1} , {key2:value2} ] } )
+4. NOT -> db.<collection name>.find( { key : { $not : {value || condition} } } )
+
+example -> db.users.find( { $or : [ {id:5} , {id:2} ] } )
+example -> db.users.find( {id: {$not: {$gt : 5}} } )
+
+
+// only name will show with condition
+db.users.find({id : {$gt: 2}}, {name:1 , _id:0})
+// if we use only name then we cannot add id key inside that _id is default it can be use with any one
+
+
+
+// in termial we have to write this command
+mongoimport C:\Users\piyus\Desktop\sem6_data\mern_stack\28-12-24_mongoDB\userData.json -d sample -c users --jsonArray
+// it will import the json file to sample name data base user collections
+
+
+//Update  --> $set , $unset $rename
+// updateOne // updateMany
+
+//set
+if key is not exist then it will create it.....
+db.users.updateOne({condition}, {setValue})
+db.collectionName.updateOne({filterKey : filterValue} , {$set : {key: updatedValue}})
+db.collectionName.updateMany({filterKey : filterValue} , {$set : {key: updatedValue}})
+db.users.updateOne({}, {setValue}) ---> for all update we do condition is empty
+example-> db.users.updateMany({},{$set : {Eligible : 1}}) // the eligible key is add to all the document
+
+//unset -> remove the filled
+db.collectionName.updateOne({filterKey : filterValue} , {$unset : {key: updatedValue}})
+
+
+//rename -> change the key name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
