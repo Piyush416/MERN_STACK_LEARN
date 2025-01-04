@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "32-12-24_ejs_template_engine": "file:",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
   },
