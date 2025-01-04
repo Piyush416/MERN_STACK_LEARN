@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(12, 12, 39);
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 5px rgb(42, 42, 236);
+    border-radius: 5px;
+}
+
+a:hover{
+    color: rgb(110, 110, 219);
+}
+
+
+/* footer css */
+footer
+{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(12, 12, 39);
+    width: 100vw;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgb(42, 42, 236);
+}

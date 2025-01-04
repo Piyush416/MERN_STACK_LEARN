@@ -1,0 +1,32 @@
+facebook create webPacks with CRA -> create reactapp
+CRA a create a whole folder is know as webPacks
+
+
+legacy command 
+npx create-react-app <folder name|| app name>
+
+
+// <React.StrictMode> -> it will render the two times
+// 1st for testing
+// 2nd for rendering
+
+
+
+// we use this command
+vite latest command 
+npm create vite@latest <application folder name>
+// inside this node_module is not there that's why its download fast
+// npm install (for downloading all the node packages means node_module)
+
+
+
+
+
+
+
+
+
+// run react project
+npm run dev
+
+

@@ -1,0 +1,56 @@
+facebook create webPacks with CRA -> create reactapp
+CRA a create a whole folder is know as webPacks
+
+
+legacy command 
+npx create-react-app <folder name|| app name>
+
+
+// <React.StrictMode> -> it will render the two times
+// 1st for testing
+// 2nd for rendering
+
+
+
+// we use this command
+vite latest command 
+npm create vite@latest <application folder name>
+// select the reactJs framework
+// after javascript language
+
+Note**
+// inside this node_module is not there that's why its download fast
+
+// so to download node_modue we use this command
+// npm install (for downloading all the node packages means node_module)
+
+// run react project
+npm run dev
+
+
+
+// main.jsx is the script file which is embedded in index.html
+// app.jsx is the component which are send the html tag to main.jsx and 
+// main.jsx is embedded with index.html
+
+
+// so we create component in app.jsx or any other file MyHeader.jsx 
+// and import in this app.jsx 
+// Note that component name must be start with captial letter only (that is must )
+
+
+
+---------------------------------------------------------------------------------------------------
+
+// Props (Properties)
+// send the information of property to one component to another component
+// it is single direction
+// we can transfer data from parent component to child component
+
+// Prop Drilling
+// those component have not want data but we send it to it that is Prop Drilling
+
+
+
+
+

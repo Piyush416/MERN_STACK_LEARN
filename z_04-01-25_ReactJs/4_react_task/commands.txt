@@ -1,0 +1,4 @@
+// we have to render the home.jsx and about.jsx when a tag href click without page loading
+// install the react router package
+npm i react-router-dom
+
