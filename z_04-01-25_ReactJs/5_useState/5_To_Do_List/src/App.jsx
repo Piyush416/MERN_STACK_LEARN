@@ -4,7 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  // task is empty array
   const [tasks, setTask] = useState([])
+  // taskvalue is the single value variable
   const [taskValue, settaskValue] = useState()
 
   const handlerAddTask = () => {

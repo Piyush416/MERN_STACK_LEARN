@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "31-12-24_middlewares": "file:",
     "express": "^4.21.2"
   }
 }

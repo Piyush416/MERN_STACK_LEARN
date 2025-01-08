@@ -1,0 +1,13 @@
+// frontend
+npm create vite@latest .
+// to start frontend
+npm run dev
+
+
+//backend
+npm init -y
+npm install express
+// create index.js file
+
+// to stast backend
+node index.js
